@@ -1,0 +1,132 @@
+#chat-icon {
+  position: fixed;
+  z-index: 999;
+  right: 10px;
+  bottom: 20px;
+  background-color: #fefae0;
+  padding: 10px 10px 10px 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+  box-shadow: #222222af 0px 20px 50px 0px;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+#chat-icon:hover {
+  transform: translate(0, -3px);
+  transition: 0.2s ease-in-out;
+  box-shadow: #222 0px 15px 29px 0px;
+}
+#phone-icon {
+  position: fixed;
+  z-index: 999;
+  right: 10px;
+  bottom: 100px;
+  background-color: #e69827;
+  padding: 10px 20px 10px 20px;
+  margin-right: 10px;
+  border-radius: 10px;
+  box-shadow: #fefae0e8 0px 20px 50px 0px;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+#phone-icon:hover {
+  transform: translate(0, -3px);
+  transition: 0.2s ease-in-out;
+  box-shadow: #fefae0 0px 15px 29px 0px;
+}
+
+#chat-container {
+  display: block;
+  position: fixed;
+  z-index: 999;
+  /* ! */
+  right: 10px;
+  bottom: 100px;
+
+  height: 400px;
+  width: 300px;
+
+  padding: 0px 30px 0px 30px;
+  border-radius: 20px;
+
+  background: #fefae0;
+  box-shadow: #222222af 0px 20px 50px 0px;
+}
+
+#chat-text {
+  display: block;
+  overflow-y: scroll;
+  height: 80%;
+}
+
+#textarea {
+  display: block;
+
+  position: absolute;
+  width: 90%;
+  height: 45px;
+  right: 15px;
+  padding: 8px 5px 0px 20px;
+  bottom: 15px;
+
+  border-radius: 50px;
+  border: transparent solid 1px;
+  background: rgba(179, 176, 159, 0.69);
+}
+
+#textarea:focus {
+  outline: none;
+}
+
+.ans1 {
+  position: relative;
+  color: white;
+  background: #a76c1b;
+  width: 190px;
+  padding: 10px;
+  border-radius: 10px;
+  word-break: break-all;
+}
+.ans1:after {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  left: 10px;
+  bottom: -20px;
+  border: solid 10px transparent;
+  border-top-color: #a76c1b;
+}
+
+.ans2 {
+  position: relative;
+  color: white;
+  background: #d19328;
+  width: 190px;
+  padding: 10px;
+  border-radius: 10px;
+  left: 50px;
+  word-break: break-all;
+}
+.ans2:after {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  right: 10px;
+  bottom: -20px;
+  border: solid 10px transparent;
+  border-top-color: #d19328;
+}
+
+/* robot RWD */
+
+@media only screen and (max-width: 1200px) {
+  #chat-icon,
+  #chat-container,
+  #phone-icon {
+    display: none;
+  }
+}

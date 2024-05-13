@@ -1,0 +1,630 @@
+  <!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="/images-active/Logo.png" />
+    <title>寶島慢播市集</title>
+    <link rel="stylesheet" href="main.css" type="text/css" />
+    <link rel="stylesheet" href="robot.css" type="text/css" />
+    <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" href="css/owl.carousel.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.css" />
+    <link rel="stylesheet" href="css/bootstrap-4.4.1.css" />
+  </head>
+  <body>
+    <!-- navbar-bg -->
+    <nav class="navbar navbar-expand-xl navbar-light fixed-top" id="navbar-bg">
+      <a class="navbar-brand font-weight-bolder title" href="#"
+        ><img
+          src="./images-active/Logo.png"
+          alt=""
+          width="50px"
+          height="50px"
+          class="mr-2"
+        />寶島慢播市集</a
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <!-- home,scroll,clock,bookmark,info-circle -->
+          <li class="nav-item mr-2">
+            <a class="nav-link" href="#"
+              ><i class="fas fa-home mr-1" style="color: #404040"></i>首 頁</a
+            >
+          </li>
+          <li class="nav-item mr-2">
+            <a class="nav-link" href="#Introduction"
+              ><i class="fas fa-scroll mr-1" style="color: #404040"></i>市集介紹</a
+            >
+          </li>
+          <li class="nav-item mr-2">
+            <a class="nav-link" href="#Schedule"
+              ><i class="fas fa-clock mr-1" style="color: #404040"></i>活動檔期</a
+            >
+          </li>
+          <li class="nav-item mr-2">
+            <a class="nav-link" href="#Information"
+              ><i class="fas fa-bookmark mr-1" style="color: #404040"></i>活動報名</a
+            >
+          </li>
+          <li class="nav-item mr-2">
+            <a class="nav-link" href="#Traffic"
+              ><i class="fas fa-info-circle mr-1" style="color: #404040"></i
+              >交通資訊</a
+            >
+          </li>
+          <li class="nav-item mr-2">
+            <a class="nav-link" href="#Contact"
+              ><i class="fas fa-envelope mr-1" style="color: #404040"></i>聯絡我們</a
+            >
+          </li>
+        </ul>
+        <!-- login-btn -->
+        <button class="btn btn-outline-success my- my-sm-0" id="login-btn" data-toggle="modal"
+        data-target="#loginModal">
+          登入
+        </button>
+      </div>
+    </nav>
+        <div
+          class="modal fade"
+          id="loginModal"
+          tabindex="-1"
+        >
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content" id="login-modal-content">
+              <div class="modal-body">
+                <div class="form-title text-center mt-4 mb-4" id="login-form-title">
+                  <h4>會員登入</h4>
+                </div>
+                <div class="d-flex flex-column text-center">
+                  <form>
+                    <div class="form-group">
+                      <input
+                        type="email"
+                        class="form-control"
+                        placeholder="帳號"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <input
+                        type="password"
+                        class="form-control"
+                        placeholder="密碼"
+                      />
+                    </div>
+                    <button
+                      type="button"
+                      class="btn btn-success btn-block font-weight-bold"
+                      id="login-modal-btn"
+                      data-dismiss="modal"
+                      onclick="loginAlert()"
+                    >
+                      登入
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div
+      id="carouselSlidesOnly"
+      class="carousel slide carousel-fade"
+      data-ride="carousel"
+    >
+      <ol class="carousel-lists">
+        <li
+          class="carousel-object"
+          data-target="#carouselSlidesOnly"
+          data-slide-to="0"
+          class="active"
+        >
+          <img src="./images-active/list-1.JPG" alt="" />
+        </li>
+        <li
+          class="carousel-object"
+          data-target="#carouselSlidesOnly"
+          data-slide-to="1"
+        >
+          <img src="./images-active/list-2.JPG" alt="" />
+        </li>
+        <li
+          class="carousel-object"
+          data-target="#carouselSlidesOnly"
+          data-slide-to="2"
+        >
+          <img src="./images-active/list-3.JPG" alt="" />
+        </li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active slide-1">
+          <div class="item-text">
+            <div class="item-text-content">
+              <div class="heading">
+                <p><span>秋意</span>濃情・心隨秋飄</p>
+              </div>
+              <div class="caption">
+                <p>
+                  我們追尋著秋天的美麗，將心靈與大自然融為一體。<br />
+                  透過詩意的文字，帶您漫遊於金黃的樹葉中，感受微涼的秋風，探索心靈深處的寧靜。<br />
+                  讓我們一同沉浸在這個充滿著詩情畫意的秋日世界，尋找屬於每個人獨特的秋天之美。
+                </p>
+              </div>
+              <div class="btns">
+                <a href="#Introduction" class="hero-btn" id="hero-btn-first"
+                  >繼續瀏覽</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item slide-2">
+          <div class="item-text">
+            <div class="item-text-content">
+              <div class="heading">
+                <p>
+                  <span>ChiiiiilL</span><br />
+                  日式市集
+                </p>
+              </div>
+              <div class="caption">
+                <p>
+                  秋天即將來臨，陽光漸轉柔和；微風拂過，即將舉辦於台中的「ChiiiiilL
+                  日式市集」宛如一幅恬靜的畫卷，<br />
+                  將都市節奏的瘋狂轉化為慢動作的舞蹈。在這個市集中，一切都仿佛進入了慢時光，<br />
+                  放慢了速度，給予人們與自然和諧共處的寶貴時光。
+                </p>
+              </div>
+              <div class="btns">
+                <a href="#Introduction" class="hero-btn" id="hero-btn-sec"
+                  >繼續瀏覽</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item slide-3">
+          <div class="item-text">
+            <div class="item-text-content">
+              <div class="heading">
+                <p><span>寶島</span>慢播 假日市集</p>
+              </div>
+              <div class="caption">
+                <p>
+                  這裡的一切都如同慢動作電影一般，每一個瞬間都讓人難以忘懷。<br />
+                  藝術品、手工藝品和人情的溫暖都值得細細品味，
+                  而音樂和表演也如一場悠長的夢境，<br />將人們帶入一個奇妙的世界。在這個慢時光的季節，享受當下，並感受生活的豐富多彩。
+                </p>
+              </div>
+              <div class="btns">
+                <a href="#Introduction" class="hero-btn">繼續瀏覽</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main>
+      <div class="about-section" id="Introduction">
+        <div class="about-section-wrapper">
+          <div class="about-image">
+            <div class="owl-carousel owl-theme">
+              <div class="item">
+                <img src="./Gallery/market_pic10.JPG" alt="" />
+              </div>
+              <div class="item">
+                <img src="./Gallery/market_pic11.JPG" alt="" />
+              </div>
+              <div class="item">
+                <img src="./Gallery/market_pic13.JPG" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="about-text">
+            <div class="about-text-wrapper">
+              <h6>ChiiiiilL 日式市集</h6>
+              <h1><span>秋日</span>將至・微風徐徐</h1>
+              <p>
+                在這個特別的市集中，<br />你可以體驗油畫、參加音樂會、甚至和不同國家的人同樂，
+                <br />在這裡，您將沉浸在秋天的氛圍中，
+                感受微風拂過皮膚的清涼，<br />
+                在充滿著秋季美食、手工藝品和音樂表演中享受秋天的樂趣。<br />
+              </p>
+              <div class="about-buttons">
+                <a href="#Information" class="booking-button">馬上報名</a>
+                <a href="#Schedule" class="nextPage-button"
+                  ><i class="fas fa-arrow-down fa-lg"></i
+                ></a>
+                <!-- ! -->
+              </div>
+              <div class="dragRemind">
+                <!-- ! -->
+                <i class="far fa-hand-paper fa-2x" style="color: #222"></i>
+                <p>拖曳觀看更多圖片</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="banner">
+          <h2>
+            <b>讓我們將生活以慢動作撥放，專注於身旁的各種細節。<br />這是一種生活方式，讓我們深刻地感受世界的美麗<br />
+            品味每個瞬間的價值，並學會真正珍惜生活中的點滴。</b>
+          </h2>
+      </div>
+      <div class="schedule-section" id="Schedule">
+        <div class="schedule-section-wrapper">
+          <div class="schedule-title">
+            <h2>活動檔期</h2>
+            <p>
+              協助組織和參加活動的人們了解活動的時間安排，以確保一切順利進行。
+            </p>
+          </div>
+          <div class="schedule-item-group">
+            <div class="schedule-item">
+              <h3>過去青春・歷史之旅</h3>
+              <ul>
+                <a href="#Information"
+                  ><li>
+                    <p>第一個舞台表演： 12月/6號 週五晚上7:00 - 9:00</p>
+                  </li></a
+                >
+                <a href="#Information"
+                  ><li>
+                    <p>第一個舞台表演： 12月/6 號週五晚上7:00 - 9:00</p>
+                  </li></a
+                >
+                <a href="#Information"
+                  ><li>
+                    <p>第三個舞台表演： 12月/8號 週日下午2:00 - 下午 4:00</p>
+                  </li></a
+                >
+              </ul>
+            </div>
+            <div class="schedule-item">
+              <h3>水泥叢林・城市大自然</h3>
+              <ul>
+                <a href="#Information"
+                  ><li>
+                    <p>第一個舞台表演： 12月/20號 週六上午11:00 - 下午 1:00</p>
+                  </li></a
+                >
+                <a href="#Information"
+                  ><li>
+                    <p>第二個舞台表演： 12月/21號 週日下午3:00 - 下午 5:00</p>
+                  </li></a
+                >
+                <a href="#Information"
+                  ><li><p>敬請期待</p></li></a
+                >
+              </ul>
+            </div>
+          </div>
+          <div class="schedule-item-group">
+            <div class="schedule-item">
+              <h3>藝染之街・街頭藝術之旅</h3>
+              <ul>
+                <a href="#Information">
+                  <li>
+                    <p>第一個舞台表演： 12月/1號 週五 晚上8:00 - 10:00</p>
+                  </li></a
+                >
+                <a href="#Information">
+                  <li>
+                    <p>第二個舞台表演： 12月/2號 週六 下午1:00 - 下午3:00</p>
+                  </li></a
+                >
+                <a href="#Information">
+                  <li>
+                    <p>第三個舞台表演： 12月/3號 週日 上午11:00 - 上午1:00</p>
+                  </li></a
+                >
+              </ul>
+            </div>
+            <div class="schedule-item">
+              <h3>跨界新境・多元文化探索</h3>
+              <ul>
+                <a href="#Information"
+                  ><li>
+                    <p>第一個舞台表演： 12月/9號 週五晚上7:30 - 9:30</p>
+                  </li></a
+                >
+                <a href="#Information"
+                  ><li>
+                    <p>第二個舞台表演： 12月/10號 週六下午3:30 - 下午 5:30</p>
+                  </li></a
+                >
+                <a href="#Information"
+                  ><li>
+                    <p>
+                      特別結尾表演： 12月/11號 週日下午4:00 - 下午 6:00<br />
+                    </p></li
+                ></a>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cart-section" id="Information">
+        <div class="cart-card">
+          <div class="cart-card-title">
+            <h2>活動預約頁面</h2>
+            <p>
+              這裡，您可以輕鬆預約我們精心策劃的各種活動，無論是文化體驗、冒險旅行、藝術工作坊還是特別活動，我們都有豐富的選擇等待著您。
+            </p>
+          </div>
+          <div class="card-deck">
+            <div class="card" id="custom-card">
+              <img class="card-img-top" src="./Gallery/market_pic04.JPG" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">歷史之旅: 歷史故事講解</h5>
+                <p class="card-text mb-3 mt-3">這是一次穿越時光的機會，讓你沉浸在城市的過去，聆聽傳說和故事，感受歷史的魅力。</p>
+                  <a  href="#" 
+                      class="btn btn-success mb-3 pr-4 pl-4" 
+                      id="cart-btn" 
+                      data-toggle="modal"
+                      data-target="#exampleModalCenter"
+                      onclick="cartAlert()">報名</a>
+              </div>
+            </div>
+            <div class="card" id="custom-card">
+              <img class="card-img-top" src="./Gallery/market_pic04.JPG" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">大自然音樂會:音樂饗宴</h5>
+                <p class="card-text mb-3 mt-3">你將享受到大自然音樂會的精彩表演。音樂家們將以大自然為靈感，演奏悅耳的音樂!</p>
+                <a  href="#" 
+                    class="btn btn-success mb-3 pr-4 pl-4" 
+                    id="cart-btn" 
+                    data-toggle="modal"
+                    data-target="#exampleModalCenter"
+                    onclick="cartAlert()">報名</a>
+              </div>
+            </div>
+            <div class="card" id="custom-card">
+              <img class="card-img-top" src="./Gallery/market_pic04.JPG" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">街頭藝術表演:藝術盛會</h5>
+                <p class="card-text mb-3 mt-3">街頭藝術家們將在我們的舞台上進行現場表演，包括塗鴉、街舞和音樂演出。</p>
+                  <a href="#" class="btn btn-success mb-3 pr-4 pl-4" id="cart-btn" data-toggle="modal"
+                    data-target="#exampleModalCenter"
+                    onclick="cartAlert()">報名</a>
+              </div>
+            </div>
+            <div class="card" id="custom-card">
+              <img class="card-img-top" src="./Gallery/market_pic04.JPG" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">多元文化探索:跨界新境</h5>
+                <p class="card-text mb-3 mt-3">我們將為您呈現多國文化的舞蹈和音樂表演，展示不同國家的藝術風格。</p>
+                  <a href="#" class="btn btn-success mb-3 pr-4 pl-4" id="cart-btn" data-toggle="modal"
+                    data-target="#exampleModalCenter"
+                    onclick="cartAlert()">報名</a>
+              </div>
+            </div>
+          </div>
+            <div
+              class="modal fade"
+              id="exampleModalCenter"
+              tabindex="-1"
+              role="dialog"
+            >
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content" id="activity-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="activity-title">活動報名</h5>
+                  </div>
+                  <div class="modal-body" id="activity-body">
+                    你確定要報名此活動嗎?
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-dismiss="modal"
+                      id="activity-btn"
+                    >
+                      取消
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-success"
+                      data-dismiss="modal"
+                      id="activity-btn"
+                      onclick="Activity()"
+                    >
+                      確定報名
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="traffic-section" id="Traffic">
+        <div class="traffic-section-title">
+          <h1>交通資訊</h1>
+          <p>我們提供完整的交通訊息，讓您順利找到我們</p>
+        </div>
+        <div class="traffic-wrapper">
+          <div class="traffic-card-group">
+            <div class="traffic-card">
+              <div class="traffic-card-title">
+                <i class="fas fa-train fa-3x" style="color: #404040"></i>
+                <h3><b>高鐵</b></h3>
+              </div>
+              <div class="traffic-card-caption">
+                <i class="fas fa-caret-right fa-2x" style="color: #e4a029"></i>
+                <ul>
+                  <li>
+                    臺中新烏日高鐵站下車，搭乘接駁車或火車至臺中火車站，<br />
+                    再轉搭公車至道禾六藝文化館。
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="traffic-card">
+              <div class="traffic-card-title">
+                <i class="fas fa-subway fa-3x" style="color: #404040"></i>
+                <h3><b>台鐵</b></h3>
+              </div>
+              <div class="traffic-card-caption">
+                <i class="fas fa-caret-right fa-2x" style="color: #e4a029"></i>
+                <ul>
+                  <li>臺中火車站下車， 可轉搭公車至道禾六藝文化館。</li>
+                </ul>
+              </div>
+            </div>
+            <div class="traffic-card">
+              <div class="traffic-card-title">
+                <!--  -->
+                <i class="fas fa-bus fa-3x" style="color: #404040"></i>
+                <h3><b>公車</b></h3>
+              </div>
+              <div class="traffic-card-caption">
+                <i class="fas fa-caret-right fa-2x" style="color: #e4a029"></i>
+                <ul>
+                  <li>公車 【道禾六藝文化館】下車</li>
+                  <li>公車 【地方法院】下車，步行約五分鐘至道禾六藝文化館</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="traffic-card-group" id="group-2">
+            <div class="traffic-card">
+              <div class="traffic-card-title">
+                <i class="fas fa-biking fa-3x" style="color: #404040"></i>
+                <h3><b>臺中 I-bike 鄰近站點</b></h3>
+              </div>
+              <div class="traffic-card-caption">
+                <i class="fas fa-caret-right fa-2x" style="color: #e4a029"></i>
+                <ul>
+                  <li>中山地政事務所-三民路一段/三民路一段 156 巷口</li>
+                  <li>公館公園-三民路一段/自由路一段口</li>
+                  <li>臺中女中-自由路一段/康樂街口</li>
+                  <li>復興停車場-復興路三段/國光路口</li>
+                </ul>
+              </div>
+            </div>
+            <div class="traffic-card">
+              <div class="traffic-card-title">
+                <!--  -->
+                <i class="fas fa-car fa-3x" style="color: #404040"></i>
+                <h3><b>自行開車</b></h3>
+              </div>
+              <div class="traffic-card-caption">
+                <i class="fas fa-caret-right fa-2x" style="color: #e4a029"></i>
+                <ul>
+                  <li>
+                    <span><b>南下</b></span>
+                    中山五權交流道→五權西路→五權路→林森路→府後街口<br />
+                    (園區旁 備有大型公有停車場)
+                  </li>
+                  <li>
+                    <span><b>北上</b></span>
+                    中港交流道→台灣大道→英才路→林森路→府後街口<br />
+                    (園區旁備有 大型公有停車場)
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-container" id="Contact">
+        <div class="footer-wrapper">
+          <div class="footer-title">
+            <div class="footer-title-text">
+             <img src="./images-active/Logo.png" alt="" width="75px" height="75px">
+             <span>寶島慢播市集</span>
+            </div>
+            <div class="social-media">
+                <a href=""><i class="fab fa-facebook fa-2x"></i></a>
+                <a href=""><i class="fab fa-instagram fa-2x"></i></a>
+                <a href=""><i class="fab fa-line fa-2x"></i></a>
+            </div>
+          </div>
+          <div class="footer-links">
+            <h5>連結</h5>
+            <ul>
+              <li><a href="#">首頁</a></li>
+              <li><a href="#Introduction">市集介紹</a></li>
+              <li><a href="#Schedule">活動檔期</a></li>
+              <li><a href="#Information">活動報名</a></li>
+              <li><a href="#Traffic">交通資訊</a></li>
+            </ul>
+          </div>
+          <div class="footer-text">
+            <h5>聯繫方式</h5>
+            <ul>
+              <li class="full-column">
+                <i class="fas fa-phone"></i>
+                <span>電話：0947-917-747</span>
+              </li>
+              <li class="full-column">
+                <i class="fas fa-envelope"></i>
+                <span>電子郵件：service@citimambo.com</span>
+              </li>
+              <li class="full-column">
+                <i class="fas fa-desktop"></i>
+                <span>網站：www.citimambo.com</span>
+              </li>
+              <li class="full-column">
+                <i class="fas fa-map-marked-alt"></i>
+                <span>活動期間：2023 年10 月份，週五/週六/週日<br />
+                (每週五晚間18:00-22:00)(每週六日上午10:00 至下午21:00) <br />
+                活動地點： 台中市西區林森路33 號</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="declare"><p>ㄏ</p></div>
+    </footer>
+    <div id="chat-icon">
+      <i class="fas fa-headset fa-3x" style="color: #404040"></i>
+    </div>
+    <div id="phone-icon">
+      <a
+        href="javascript://"
+        onclick="openChat()"
+        ><i class="fas fa-mobile fa-3x" style="color: #fefae0"></i
+      ></a>
+    </div>
+    <div id="chat-container">
+      <div id="chat-text">
+        <div class="ans1">歡迎光臨，有任何問題都可以問我喔。</div>
+        <br />
+      </div>
+      <textarea
+        row="2"
+        placeholder="你的訊息..."
+        name="textarea"
+        id="textarea"
+        onkeydown="keyin(event)"
+      ></textarea>
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.4.1.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="main.js" type="text/javascript"></script>
+  </body>
+</html>
